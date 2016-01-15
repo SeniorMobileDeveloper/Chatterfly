@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Public.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
++(AppDelegate *) delegate;
+- (void) logout;
 
+@property (assign, nonatomic) INTULocationAccuracy desiredAccuracy;
+@property (assign, nonatomic) NSTimeInterval timeout;
+
+@property (assign, nonatomic) INTULocationRequestID locationRequestID;
 
 @end
 

@@ -10,6 +10,13 @@
 
 @interface ViewController : UIViewController
 
-
+@property (weak, nonatomic) IBOutlet UIButton *btnLogin;
+@property (weak, nonatomic) IBOutlet UIButton *btnSignup;
+@property (weak, nonatomic) IBOutlet UIButton *btnFB;
+- (IBAction)onLogin:(id)sender;
+- (IBAction)onSignup:(id)sender;
+- (IBAction)onLoginFacebook:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *tfUsername;
+@property (weak, nonatomic) IBOutlet UITextField *tfPw;
 @end
 
